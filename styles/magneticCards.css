@@ -1,0 +1,9 @@
+.magnetic-card {
+  transition: transform 0.15s ease;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+.magnetic-card:hover {
+  z-index: 2;
+}

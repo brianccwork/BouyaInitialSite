@@ -1,0 +1,92 @@
+:root {
+  --color-bg-main: #f4f8fb;
+  --color-text-main: #333;
+  --color-accent: #0097b2; /* main color */
+  --color-accent-hover: #005969;
+  --color-highlight: #00b0cf;
+  --color-gradient-start: #ffbd59;
+  --color-gradient-end: #c1ff72;
+  --color-footer: #2bb2ca;
+  --color-button-yellow: #0097b2;
+}
+
+.bg-body {
+  background-color: var(--color-bg-main);
+}
+
+.text-body {
+  color: var(--color-text-main);
+}
+
+/* Footer link visibility */
+footer a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+footer a:hover { opacity: .85; }
+
+.hero-section {
+  background: linear-gradient(
+    to bottom right,
+    var(--color-gradient-start),
+    var(--color-highlight),
+    var(--color-gradient-end)
+  );
+}
+
+.section-title {
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.bg-login-gradient {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    var(--color-gradient-start),
+    var(--color-highlight),
+    var(--color-gradient-end)
+  );
+}
+
+.text-primary {
+  color: var(--color-accent) !important;
+}
+
+/* Only apply hover color to <a> links, not headers or text elements */
+a.text-primary:hover {
+  color: var(--color-accent-hover) !important;
+}
+
+/* Prevent hover change on all other non-link text-primary elements */
+.text-primary:hover:not(a) {
+  color: var(--color-accent) !important;
+}
+
+.btn-primary {
+  background-color: var(--color-button-yellow) !important;
+  border-color: var(--color-button-yellow) !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover) !important;
+  border-color: var(--color-accent-hover) !important;
+}
+
+@font-face {
+  font-family: "Galano Grotesque";
+  src: url("fonts/GalanoGrotesque-Regular.woff2") format("woff2"),
+    url("fonts/GalanoGrotesque-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Galano Grotesque", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
